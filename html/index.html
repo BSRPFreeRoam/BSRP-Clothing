@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS Race Clothing</title>
+    <style>
+        html, body { background: transparent !important; background-color: transparent !important; }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background: transparent !important;">
+    <div id="app" class="hidden">
+        <div class="shell">
+            <!-- Left: categories -->
+            <div class="panel left">
+                <div class="edge edge-top"></div>
+                <div class="edge edge-bottom"></div>
+                <div class="corner c-tl"></div>
+                <div class="corner c-tr"></div>
+                <div class="corner c-bl"></div>
+                <div class="corner c-br"></div>
+                <div class="glow-bar"></div>
+
+                <div class="brand">
+                    <div class="badge">
+                        <span class="pulse-dot"></span>
+                        FREE
+                    </div>
+                    <h1 id="shopName">CLOTHING</h1>
+                    <div class="tag" id="subtitle">WARDROBE // STYLE</div>
+                    <div class="brand-line"></div>
+                    <div class="veh-chip">
+                        <span class="chip-label">STORE</span>
+                        <span class="chip-val">STANDALONE · NO DB</span>
+                    </div>
+                </div>
+
+                <div class="cats fx-scroll" id="categories"></div>
+
+                <div class="left-actions">
+                    <button type="button" class="btn ghost" id="btnReset">RESTORE</button>
+                    <button type="button" class="btn danger" id="btnCancel">CANCEL</button>
+                    <button type="button" class="btn primary" id="btnWear">WEAR</button>
+                </div>
+            </div>
+
+            <!-- Right: options -->
+            <div class="panel right">
+                <div class="edge edge-top"></div>
+                <div class="edge edge-bottom"></div>
+                <div class="corner c-tl"></div>
+                <div class="corner c-tr"></div>
+                <div class="corner c-bl"></div>
+                <div class="corner c-br"></div>
+                <div class="glow-bar"></div>
+
+                <div class="right-head">
+                    <div>
+                        <div class="section-tag">CUSTOMIZE</div>
+                        <h2 id="sectionTitle">Select a category</h2>
+                    </div>
+                </div>
+
+                <div class="content fx-scroll" id="content">
+                    <div class="empty-hint">Choose a clothing category to browse styles.</div>
+                </div>
+
+                <div class="cam-bar">
+                    <span class="cam-label">CAMERA</span>
+                    <button type="button" class="cam-btn" data-cam="left" title="Orbit left">◀</button>
+                    <button type="button" class="cam-btn" data-cam="right" title="Orbit right">▶</button>
+                    <button type="button" class="cam-btn" data-cam="up" title="Pitch up">▲</button>
+                    <button type="button" class="cam-btn" data-cam="down" title="Pitch down">▼</button>
+                    <button type="button" class="cam-btn" data-cam="zoom_in" title="Zoom in">＋</button>
+                    <button type="button" class="cam-btn" data-cam="zoom_out" title="Zoom out">－</button>
+                    <button type="button" class="cam-btn" data-cam="reset" title="Reset">↺</button>
+                    <span class="cam-sep"></span>
+                    <button type="button" class="cam-btn" data-ped="left" title="Turn ped left">⟲</button>
+                    <button type="button" class="cam-btn" data-ped="right" title="Turn ped right">⟳</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick strip / emote bar (right side, like take-off clothing buttons) -->
+        <div id="stripBar" class="strip-bar hidden">
+            <button type="button" class="strip-btn" data-strip="hat" title="Take off hat">🎩</button>
+            <button type="button" class="strip-btn" data-strip="mask" title="Take off mask">🎭</button>
+            <button type="button" class="strip-btn" data-strip="glasses" title="Take off glasses">👓</button>
+            <button type="button" class="strip-btn" data-strip="shirt" title="Take off shirt">👕</button>
+            <button type="button" class="strip-btn" data-strip="shoes" title="Take off shoes">👟</button>
+            <button type="button" class="strip-btn" data-strip="pants" title="Take off pants">👖</button>
+            <div class="strip-sep"></div>
+            <button type="button" class="strip-btn emote" data-emote="handsup" title="Hands up">🙌</button>
+            <button type="button" class="strip-btn emote" data-emote="cancel" title="Stop emote">⏹</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
